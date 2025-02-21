@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#conteiner_master{
+    height: 100vh;
+}
+
+header{
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu a{
+    padding-right: 5px;
+}
+
+main{
+    width: 1000px;
+    margin: 20px 0px 90px 0px;
+
+}
+
+main p{
+    padding: 20px 0px 20px 0px;
+}
+
+footer{
+    width: 1000px;
+    text-align: center;
+}
