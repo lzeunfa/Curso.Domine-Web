@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/*configs gerais*/
+*{
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(255,196,0);
+
+    font-size: 2em;
+    font-weight: 500;
+}
+
+body{
+    background-color:rgb(251, 248, 251) ;
+}
+
+
+/*Parte do cabeçalho*/
+header{
+    background-color: rgb(255,196,0);
+
+    height: 160px;
+
+    text-align: center;
+}
+
+/*logo*/
+
+#logo h1{
+    color: rgb(74,75,88);
+
+    padding: 30px 0px 35px 0px;
+
+    font-size: 3em;
+    font-weight: 600;
+}
+
+#logo > h1 > span{
+    color: rgb(255, 255, 255);
+}
+
+/*parte do menu*/
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu ul{
+    display: flex;
+}
+
+header a{
+    color: rgb(255, 255, 255);
+
+    padding: 0px 20px 0px 20px;
+
+    font-size: 1.2em;
+    text-decoration: none;
+
+    transition: .6s;
+
+}
+
+header a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255,196,0);
+
+    transition: .6s;
+}
+
+/*fim parte do cabeçalho*/
+
+/*começo parte principal*/
+
+#principal{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    background-color: white;
+
+    width: 680px;
+
+    padding: 20px;
+    margin-top: 20px;
+}
+
+main p{
+    padding: 10px 0px 10px 0px;
+}
+
+main a{
+    text-decoration: none;
+
+    color: rgb(255,196,0);
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+img{
+    margin: 20px 0px 20px 0px;
+}
+
+/*parte do aside*/
+aside{
+    margin: 20px 0px 0px 20px;
+}
+
+aside h2{
+    background-color: rgb(230, 230, 230);
+
+    color: rgb(83, 83, 81);
+
+}
+
+aside p,h2{
+    padding: 5px;
+}
+
+aside a{
+    text-decoration: none;
+
+    color: rgb(255,196,0);
+}
+
+aside a:hover{
+    text-decoration: underline;
+}
+
+.blocos{
+    width: 300px;
+
+    background-color: white;
+
+    padding: 10px;
+}
+
+aside ul li{
+    font-size: 1.3em;
+}
+
+.secondb{
+    margin-top: 20px;
+}
+
+.secondb a{
+    padding-bottom: 10px;
+}
+
+/*Fim do conteúdo principal*/
+
+
+/*Começo do rodapé*/
+#conteinerF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    width: 1000px;
+
+    background-color: rgb(230, 230, 230);
+}
+/*fim*/
+
+
