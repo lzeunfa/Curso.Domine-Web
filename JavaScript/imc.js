@@ -3,7 +3,7 @@ var nome = "Eliseu";
 var alturacm = "171";
     alturacm = parseFloat(alturacm);
 
-var peso = "58";
+var peso = "45";
     peso = parseInt(peso);
 
 var alturam = alturacm/100;
