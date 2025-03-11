@@ -18,7 +18,7 @@ while (count<=tamanho){
     count = count + 1;
 }*/
 
-const character = "#";//as hashtags para a pirâmide
+/*const character = "#";//as hashtags para a pirâmide
 
 const count = 8; //contador de linhas
 
@@ -40,3 +40,36 @@ for (const row of rows){
 }
 
 console.log(result);
+*/
+
+/*const tag = "*";
+
+const count = 4;
+
+const linhas =[];
+
+function montLinhas(nmLinhas,countLinhas){
+    return " ".repeat(countLinhas-nmLinhas) + tag.repeat(2*nmLinhas-1) + " ".repeat(countLinhas-nmLinhas);
+}
+
+for(i = 0; i <count; i+=1){
+    linhas.push(montLinhas(i+1,count));
+}
+
+var resultado = "";
+
+for (const linha of linhas){
+    resultado = resultado + linha + "\n";
+}
+
+console.log(resultado);
+*/
+
+function teste(nm1,nm2){
+    console.log(`${nm1} e ${nm2}`);
+    return teste;
+}
+
+teste(10,20);
+
+
