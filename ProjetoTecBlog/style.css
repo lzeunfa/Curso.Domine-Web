@@ -21,6 +21,10 @@ body{
     background-color:rgb(251, 248, 251) ;
 }
 
+#error{
+    display: none;
+}
+
 
 /*Parte do cabeçalho*/
 header{

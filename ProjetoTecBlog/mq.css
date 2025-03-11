@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media screen and (max-width:1019px) {
+    header{
+        display: none;
+    }
+
+    #principal{
+        display: none;
+    }
+
+    #conteinerF{
+        display: none;
+    }
+
+    #error{
+        display: block;
+    }
+}
