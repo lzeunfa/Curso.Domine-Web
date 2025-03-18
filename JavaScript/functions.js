@@ -1,4 +1,4 @@
-function calcAreaTerreno(comprimento, largura, altura,base){
+/*function calcAreaTerreno(comprimento, largura, altura,base){
     let area;
     switch(opcao){
         case 1:
@@ -24,4 +24,23 @@ function calcAreaTerreno(comprimento, largura, altura,base){
 
 const opcao = 2;
 calcAreaTerreno(10,4,8,5);
+*/
+
+/*
+function soma(a,b){
+    return a+b;
+}
+
+console.log(soma(7,7))
+console.log(soma(7,7,1))
+console.log(soma(7))//= not a number
+*/
+
+//Funções anônimas e wrapper
+
+var exibirMsg = function(nome){
+    console.log(`Olá ${nome}, está tudo bem?`)
+}
+
+exibirMsg('Jorge')
 
