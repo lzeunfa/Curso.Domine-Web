@@ -66,8 +66,7 @@ console.log(resultado);
 */
 
 function teste(nm1,nm2){
-    console.log(`${nm1} e ${nm2}`);
-    return teste;
+    return console.log(`${nm1} e ${nm2}`);
 }
 
 teste(10,20);

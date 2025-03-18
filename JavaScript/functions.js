@@ -31,16 +31,16 @@ function soma(a,b){
     return a+b;
 }
 
-console.log(soma(7,7))
-console.log(soma(7,7,1))
-console.log(soma(7))//= not a number
+console.log(soma(7,7));
+console.log(soma(7,7,1));
+console.log(soma(7))//= not a number;
 */
 
 //Funções anônimas e wrapper
 
 var exibirMsg = function(nome){
-    console.log(`Olá ${nome}, está tudo bem?`)
+    console.log(`Olá ${nome}, está tudo bem?`);
 }
 
-exibirMsg('Jorge')
+exibirMsg('Jorge');
 
