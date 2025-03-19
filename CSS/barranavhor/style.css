@@ -19,7 +19,7 @@ li a{
     font-size: 1.2em;
     background-color: blueviolet;
     border: 1px solid black;
-    
+    border-radius: 10px 10px 0px 0px;
 }
 
 #home #nav .home a, #sobre  #nav .sobre a, #contatos  #nav .contatos a, #grade  #nav .grade a {
