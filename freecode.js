@@ -65,4 +65,24 @@ for (const linha of linhas){
 console.log(resultado);
 */
 
+//praticando maior numero
+let nums=[2,1,4,8,7];
+
+let maior=0;
+
+let i;
+
+for(i=0;i<=nums.length-1;i++){
+    console.log(`Analisando o número ${nums[i]}.`);
+    if(nums[i]>maior){
+        maior = nums[i];
+        console.log(`O número ${maior} agora é o maior.`);
+    }else{
+        maior = maior
+        console.log(`O número ${maior}, continua sendo o maior`);
+    }
+}
+
+console.log(`No fim, o maior entre ${nums} foi: ${maior}.`);
+
 
