@@ -1,4 +1,4 @@
-let binario= "1";//numero binario
+let binario= "10010";//numero binario
     binarioOriginal = binario;
 
 let casasBi = 0;//recebe quantos números tem o num binario
