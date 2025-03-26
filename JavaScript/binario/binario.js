@@ -1,17 +1,16 @@
 let binario= "10010";//numero binario
     binarioOriginal = binario;
 
-let casasBi = 0;//recebe quantos números tem o num binario
+let casasBi = 0;
 
-let posicaoDo1 = 0;//recebe a posicao da esquerda pra direito do 1
+let posicaoDo1 = 0;
 
 
 //quando for fazer os cálculos tem q passar pra Number oq é String
 
-let posicaoReal = 0;//recebe a posicao real da direita pra esquerda apartir de 0 pra calcular o valor
+let posicaoReal = 0;
 
 var traduzindo = 0;
-    //traduzindo += 2**posicaoReal; faz o calculo de 2 elevado a posicao real q se encontra (binarios tem base 2 e da direita pra esquerda vai de ...2^3 2^2 2^1 0)
 
 function convertendoBi(){
     while(binario.indexOf("1")!= -1){
