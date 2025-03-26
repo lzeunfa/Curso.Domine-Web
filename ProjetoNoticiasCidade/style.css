@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/*configs gerais*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* // */
+
+/*começo do header*/
+header{
+    height: 250px;
+
+    background-image: url(imagens/fundo.png);
+    background-position: bottom;
+    background-size: contain;
+}
+
+#conteiner_conteudo_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#conteiner_menu_header{
+    z-index: 1;
+}
+
+#conteiner_menu_header ul{
+    display: flex;
+    list-style-type: none;
+
+    margin-top: 20px;
+}
+
+#conteiner_menu_header ul li a{
+    text-decoration: none;
+
+    background-color: #B1002F;
+
+    color: white;
+
+    padding: 15px;
+
+    font-size: 1.1em;
+
+    border-right: 1px solid #6d001db7;
+}
+
+#detalhe{
+    transform: translate(-30%,0%);
+
+    z-index: 0;
+}
+
+/* // */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteiner_entrevistas{
+    background-image: url(imagens/fundo-caixa.png);
+    padding: 10px;
+}
+
+h2{
+    background-color: #28496F;
+    color: white;
+}
+
+#conteiner_entrevistas ul {
+    background-color: white;
+
+    width: 150px;
+}
+
