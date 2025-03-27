@@ -35,4 +35,27 @@ function convertendoBi(){
 convertendoBi()
 
 
+// parte para converter binarios pra decimais
+let decimal = 65;
+
+let i = 0;
+
+let base = 2;
+
+let valor = base**i;
+console.log(valor)
+
+while(valor<decimal){
+    i ++;
+
+
+}
+
+
+function convertendoDec(){
+
+}
+
+
+
 
