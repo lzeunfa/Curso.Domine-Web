@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+
+/*configs gerais*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --letras_menu: #7D7632;
+    
+}
+
+/* // */
+
+header{
+    background-color: #ede9cc;
+
+    margin: 0 auto;
+
+    min-width: 740px;
+    max-width: 1180px;
+
+    margin-bottom: 15px;
+}
+
+#topo_header{
+    background-color: #dbcd87;
+
+    height: 15.4em;
+    min-height: 250px;
+
+    position: relative;
+}
+
+#conteiner_logo{
+    background-image: url(imagens/topo-imagem-principal2.png);
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 250px;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    padding: 15px;
+}
+
+#conteiner_menu{
+    background-image: url(imagens/topo-imagem-lateral.png);
+    background-repeat: no-repeat;
+
+    width: 450px;
+    height: 250px;
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+}
+
+#topo_menu{
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+
+    border-top: 1px solid var(--letras_menu);
+    border-bottom: 1px solid var(--letras_menu);
+
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#topo_menu p{
+    color: var(--letras_menu);
+
+    padding: 10px;
+
+    font-size: 0.9em;
+}
+
+#topo_menu button{
+    background-color: #A79F54;
+    color: white;
+
+    border: 1px solid #7D7632;
+
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+#navegacao{
+    display: flex;
+
+    margin: 10px 0px 0px 75px;
+}
+
+#navegacao ul{
+    list-style-type: none;
+}
+
+#navegacao ul li{
+    color: var(--letras_menu);
+
+    padding-bottom: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+/*fim do header */
+
+/*comeco do main*/
+
+main{
+    display: flex;
+
+    min-width: 740px;
+    max-width: 1180px;
+
+    background-color: #ede9cc;
+
+    margin: 0 auto;
+
+    height: 600px;
+}
+
+#primeira_coluna{
+    width: 50%;
+
+    background-color: #FFFEDD;
+}
+
+#primeira_coluna h3{
+    color: var(--letras_menu);
+
+    font-weight: 700;
+
+    padding: 10px;
+
+}
+
+#primeira_coluna p{
+    padding: 10px;
+
+    font-weight: 600;
+}
+
+#segunda_coluna{
+    width: 50%;
+
+    background-color: #EFECC4;
+
+    padding: 20px;
+}
+
+.infos{
+    display: flex;
+
+    border-bottom: 1px solid #7D7632;
+
+    padding: 5px;
+}
+
+.infos > p{
+    font-weight: 700;
+}
+
+.p_especial{
+    color: var(--letras_menu);
+}
+
+/*fim do main*/
+
+/*comeco do footer*/
+
+footer{
+    min-width: 740px;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    color: var(--letras_menu);
+
+    padding: 10px;
+}

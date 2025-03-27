@@ -5,7 +5,6 @@ let casasBi = 0;
 
 let posicaoDo1 = 0;
 
-
 //quando for fazer os cálculos tem q passar pra Number oq é String
 
 let posicaoReal = 0;
@@ -20,7 +19,8 @@ function convertendoBi(){
         posicaoDo1 = binario.indexOf("1");//recebe a posicao da esquerda pra direito do 1
         posicaoDo1 = parseInt(posicaoDo1);
 
-        posicaoReal = casasBi - posicaoDo1 -1;//transforma na posicao real da direita pra esquerda apartir de 0 pra calcular o valor
+        posicaoReal = casasBi - posicaoDo1 -1;
+        //transforma na posicao real da direita pra esquerda apartir de 0 pra calcular o valor
 
         traduzindo += 2**posicaoReal;//faz o calculo de 2 elevado a posicao real q se encontra (binarios tem base 2 e da direita pra esquerda vai de ...2^3 2^2 2^1 0)
 
