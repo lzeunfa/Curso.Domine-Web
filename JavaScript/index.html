@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando valores</title>
+
+    <script>
+        function distribuiCaracter(){
+            let caracter = document.getElementById("entrada").value;
+
+            document.getElementById("entrada").value = "";
+
+            caracter.trim() //retira espaços vazios
+
+            switch(caracter){
+                case "0":
+                case "1":
+                case "2":
+                case "3":
+                case "4":
+                case "5":
+                case "6":
+                case "7":
+                case "8":
+                case "9":
+
+                document.getElementById("apenas_numeros").value = caracter;
+                break;
+                default:
+                document.getElementById("apenas_letras").value = caracter;
+
+            }   
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="entrada" placeholder="Digite algum caracter" onkeyup="distribuiCaracter()">
+    <hr>
+    <span>letras:</span>
+    <input type="text" id="apenas_letras" disabled="disabled">
+
+    <span>números:</span>
+    <input type="text" id="apenas_numeros" disabled="disabled">
+</body>
+</html>
