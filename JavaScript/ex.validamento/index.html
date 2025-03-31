@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .estiloNormal{
+            background-color: lightgray;
+        }
+
+        .estiloFocado{
+            background-color: yellow;
+        }
+
+        .estiloInvalido{
+            background-color: red;
+        }
+
+        .estiloValido{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="texto" id="texto" onfocus="focado()" onblur="validamento()" autocomplete="off">
+
+
+    <script>
+        let textBox = document.getElementById("texto");
+        textBox.className =  "estiloNormal";
+
+        function focado(){
+            textBox.className =  "estiloFocado";
+        }
+
+        function validamento(){
+            let valueBox = textBox.value;
+
+            if(valueBox.length<3){
+                textBox.className =  "estiloInvalido";
+            }else{
+                textBox.className =  "estiloValido";
+            }
+        }
+    </script>
+</body>
+</html>
