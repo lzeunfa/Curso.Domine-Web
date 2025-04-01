@@ -1,24 +1,26 @@
-let numDecimal = 18;
+let numDecimal = 18;//recebe o numero decimal desejado pra conversão
 
-let arrayBinario = [];
+let arrayBinario = [];//array para montar o numBinario
 
-let expoente = 0;
+let expoente = 0;//expoente
 
-let baseTotal = 2**expoente;
+let baseTotal = 2**expoente;//calculo das bases binarias
 
-let numResto = 1;
+let numResto = 1;//resto da subtracao entre o numeroDecimal e a baseTotal
 
-let posicaoDo1 = 0;
+let posicaoDo1 = 0;//posicao onde vai ficar o 1
 
-let ciclo = 1;
+let ciclo = 1;//contagens ded ciclos da estrutura de repetição
 
-while(numResto>0){ //inicio
+while(numResto>0){ //inicio do programa
 
+    //reestart nos valores
     expoente = 0;
     baseTotal = 2**expoente;
 
-while(baseTotal<=numDecimal/2){
-    if(ciclo==1){
+while(baseTotal<=numDecimal/2){//começo das conversões
+
+    if(ciclo==1){//criação de quantas casas são necessárias pro array, quantidade fixa
         arrayBinario.push(expoente);
         arrayBinario[expoente] = "0";
     }
