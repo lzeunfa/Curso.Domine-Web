@@ -50,14 +50,10 @@
 
             <h2>Explicação</h2>
             <div id="explicacao"><!--Div para a explicação-->
-                <p>
-                Para transformar um binário em decimal, você deve ver quantas casas o número tem, EX: <br>
-                100110 possui 6 casas</p>
-                <p>Em seguida deve-se ter noção de que binários tem base dois elevado a expoente x começando em 0 da direita pra esquerda, logo você irá calcular por exemplo: <br> 100110</p>
-        
-                <p>
-                Ignora onde tem 0 e faz o cálculo de onde tem 1, o primeiro 1 está na casa 2 (da direita pra esquerda) e tem expoente 1, 2 elevado a 1 é = 2, no fim você soma tudo e por fim obtém seu número decimal.
-                </p>
+                <p>Para transformar um número binário em decimal pode fazer o seguinte:</p>
+                <p>1- Cada dígito do número binário representa uma potência de 2, começando da direita para a esquerda, com o expoente 0.</p>
+                <p>2- Só calcule onde há 1, pois os 0s não somam nada ao total.</p>
+                <p>3- Para cada 1, calcule 2^posição e some os resultados.</p>
             </div>
 
         </main>

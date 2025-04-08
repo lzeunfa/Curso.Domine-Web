@@ -36,13 +36,13 @@
             <div id="centralizar_inputs">
         
                 <div id="conteiner_inputs">
-                    <legend>Binário</legend>
+                    <legend>Decimal</legend>
                     <input type="text" name="decimal" id="decimal" autocomplete="off">
 
                     <!--Botã0 para converter e ativar a function-->
                     <input onclick="converter()" type="submit" value="Converter">
 
-                    <legend>Decimal</legend>
+                    <legend>Binário</legend>
                     <input type="text" name="binario" id="binario" readonly>
                 </div>
             </div>
@@ -50,14 +50,9 @@
 
             <h2>Explicação</h2>
             <div id="explicacao"><!--Div para a explicação-->
-                <p>
-                Para transformar um binário em decimal, você deve ver quantas casas o número tem, EX: <br>
-                100110 possui 6 casas</p>
-                <p>Em seguida deve-se ter noção de que binários tem base dois elevado a expoente x começando em 0 da direita pra esquerda, logo você irá calcular por exemplo: <br> 100110</p>
-        
-                <p>
-                Ignora onde tem 0 e faz o cálculo de onde tem 1, o primeiro 1 está na casa 2 (da direita pra esquerda) e tem expoente 1, 2 elevado a 1 é = 2, no fim você soma tudo e por fim obtém seu número decimal.
-                </p>
+                <p>Para transformar de decimal para binário é o seguinte:</p>
+                <p>1- Você pode dividir o número decimal por 2 e anote o resto (0 ou 1).Continue dividindo o resultado por 2 até chegar em 0.Depois, é só ler os restos de baixo pra cima.</p>
+                <p>2- Descobrir qual potência de 2 é menor ou igual ao número decimal.Subtraia esse valor e marque um 1 nessa posição.Repita com o resto até chegar em 0, marcando 0 onde a potência não entra.Junte os 1s e 0s para formar o número binário.</p>
             </div>
 
         </main>
