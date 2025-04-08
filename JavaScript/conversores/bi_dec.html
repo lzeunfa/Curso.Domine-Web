@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor BiOcHex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body id="body_bi">
+
+    <div id="conteiner_geral"><!--conteiner para centralização geral geral-->
+
+        <header><!--Começo do header-->
+
+            <div id="conteiner_header"><!--Conteiner pra centralizar as divs de forma correta-->
+                <div id="conteiner_nome"><!--Conteiner pro nome do site-->
+                    <h1>BiOcHex</h1>
+                </div>
+                <div id="menu"><!--Menu de seleção-->
+                    <ul>
+                        <li class="op_bi"><a href="binario.html">Binário</a></li><!--OP= option-->
+                        <li class="op_oc"><a href="#">Octal</a></li>
+                        <li class="op_hex"><a href="#">Hexadecimal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+        <!-- // -->
+
+        <main>
+
+            <h2>Converter binário para decimal</h2>
+            <!--Inputs-->
+            <div id="centralizar_inputs">
+        
+                <div id="conteiner_inputs">
+                    <legend>Binário</legend>
+                    <input type="text" name="binario" id="binario">
+                    
+                    <!--Botã0 para converter e ativar a function-->
+                    <input onclick="converter()" type="submit" value="Converter">
+
+                    <legend>Decimal</legend>
+                    <input type="text" name="decimal" id="decimal" readonly>
+                </div>
+            </div>
+            <!-- // -->
+
+            <h2>Explicação</h2>
+            <div id="explicacao"><!--Div para a explicação-->
+                <p>
+                Para transformar um binário em decimal, você deve ver quantas casas o número tem, EX: <br>
+                100110 possui 6 casas</p>
+                <p>Em seguida deve-se ter noção de que binários tem base dois elevado a expoente x começando em 0 da direita pra esquerda, logo você irá calcular por exemplo: <br> 100110</p>
+        
+                <p>
+                Ignora onde tem 0 e faz o cálculo de onde tem 1, o primeiro 1 está na casa 2 (da direita pra esquerda) e tem expoente 1, 2 elevado a 1 é = 2, no fim você soma tudo e por fim obtém seu número decimal.
+                </p>
+            </div>
+
+        </main>
+        <!-- // -->
+
+    </div>
+    <!-- // -->
+
+    <script src="binario.js"></script>
+</body>
+</html>
