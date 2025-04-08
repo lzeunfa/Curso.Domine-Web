@@ -4,15 +4,14 @@ let binario = binarioInput.value; // recebe o vaslor digitado no input
 let casasBi = 0;
 let posicaoDo1 = 0;
 let posicaoReal = 0;
-let convertendo = 0;
 
 let numeroDecimal = document.getElementById("decimal");//recebe o input
-numeroDecimal.value = "";
 
 function converter(){
     binario = binarioInput.value; // atualiza o valor dentro da função
     numeroDecimal.value = "";
-    convertendo = 0;
+    let convertendo = 0;
+
 
 
     while(binario.indexOf("1") !== -1){
@@ -29,3 +28,4 @@ function converter(){
     console.log(`${convertendo}`);
     numeroDecimal.value = convertendo; // ou .value se for um input
 }
+converter();

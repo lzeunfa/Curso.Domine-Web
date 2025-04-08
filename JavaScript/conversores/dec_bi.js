@@ -1,14 +1,15 @@
-let numDecimal = 110; // numero decimal para ser convertido
+let numInput = document.getElementById("decimal"); // recebe o input
 
-let numDecimalFixo = numDecimal
+let numeroBi = document.getElementById("binario");//recebe o input
 
-let arrayBinario = []; // array para armazenar o número binário
-let expoente = 0; // expoente
-let baseTotal = 2 ** expoente; // calculo das bases binarias
-let numResto = numDecimal; // resto do numero a ser processado
-let ciclo = 1; // contagem dos ciclos da repetiçao
+function converter(){
+    let numDecimal = parseInt(numInput.value);
+    let numResto = numDecimal; // resto do numero a ser processado
+    let arrayBinario = []; // array para armazenar o número binário
+    let expoente = 0; // expoente
+    let baseTotal = 2 ** expoente; // calculo das bases binarias
+    let ciclo = 1; // contagem dos ciclos da repetiçao
 
-function convertendoDec_Bi(){
     while (numResto > 0) { // enquanto ter numero a ser convertido
 
         // reiniciar valores para o cálculo
@@ -40,9 +41,8 @@ function convertendoDec_Bi(){
     
     // converte a arrayBinario em uma string pra mostar o numero binario formado
     let numBinario = arrayBinario.join(""); // junta os elementos da array em uma string
-    
-    console.log(`O número ${numDecimalFixo} em binário é: ${numBinario}`);
+    numeroBi.value = numBinario;
 
     return;
 }
-convertendoDec_Bi();
+converter();
