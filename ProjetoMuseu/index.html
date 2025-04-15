@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Museu Nacional</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><!--Começo do header-->
+
+        <h1>Museu <span id="especial_h1">Nacional</span></h1>
+
+        <ul>
+            <li>HOME</li>
+            <li>EXPOSIÇÕES</li>
+            <li>PESQUISA</li>
+            <li>ACERVO</li>
+            <li>VÍDEOS</li>
+            <li>FOTOS</li>
+            <li>CONTATO</li>
+        </ul>
+
+    </header>
+    <!-- // -->
+
+    <main><!--Começo do main-->
+
+        <aside><!--Começo do aside de imagens-->
+            <!--Imagem do museu-->
+            <img src="img/museu.png" alt="museu" width="860px">
+
+            <!--Imagem com depoimento-->
+            <img src="img/depoimento.png" alt="depoimento" width="425px">
+        </aside>
+        <!-- // -->
+
+        <div id="conteiner_ifrEinfos"><!--conteiner pros iframes e outras infos-->
+
+            <section><!--Section para os iframes-->
+                <div class="conteiner_iframe">
+                    <h3>VÍDEO: CONHEÇA O MUSEU</h3>
+                    <!--iframe incorporado-->
+                    <iframe width="360" height="215" src="https://www.youtube.com/embed/RGUYb-hivrc?si=YJO3wcxax8cK4df0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3>EXPOSIÇÕES</h3>
+                    <ul>
+                        <li><span class="li_especial">Os assustadores insetos</span></li>
+                        <li><span class="li_especial">O crânio de Luzia, a mulher mais <br> antiga do Brasil</span></li>
+                        <li><span class="li_especial">Preguiça gigante e tigre-dentes-de-sabre</span></li>
+                        <li><span class="li_especial">Plantas do Brasil Central</span></li>
+                        <li><span class="li_especial">Teresa Cristina: A imperatriz arqueóloga</span></li>
+                        <li><span class="li_especial">Arte Com Dinossauros - Paleoarte</span></li>
+                        <li><a href="https://www.museunacional.ufrj.br/dir/exposicoes/index.html">Veja todos</a></li>
+                    </ul>
+                </div>
+                <div class="conteiner_iframe">
+                    <h3>MAPA: ENCONTRE O MUSEU</h3>
+                    <!--iframe incorporado-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2063112591054!2d-43.2265289!3d-22.90576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1744673762801!5m2!1spt-BR!2sbr" width="360" height="215" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h3>200 ANOS DE HISTÓRIA</h3>
+                    <p>Numa ponta que avançava sobre o mar, psoteriormente conhecida como Ponta do Calabouço, entre as praias de Piaçaba e Santa Luzia, no centro histórico do Rio de Janeiro, os  portugueses construiram em 1603 a Fortaleza de Santiago, origem do conjunto arquitetônico que hoje abriga o Museu Histórico Nacional</p>
+                </div>
+            </section>
+            <!-- // -->
+
+            <!--outra section pra parte de visitas e galeria-->
+            <section id="section2">
+
+                <div id="visita"><!--começo div visita-->
+
+                    <div class="conteiner_coringa"><!--Conteiner apenas para poder realizar centralização-->
+                        <h3>FAÇA UMA VISITA</h3>
+
+                        <label for="data">Data:</label>
+                        <input type="date" name="data" id="data">
+
+                        <label for="qtd">Qtd pessoas</label>
+                        <input type="number" name="qtd" id="qtd"><br>
+
+                        <input type="button" value="Verificar Disponibilidade">
+                    </div>
+                    <!-- // -->
+
+                </div>
+                <!-- // -->
+
+                <div id="galeria"><!--começo div galeria-->
+                    <h3>GALERIA DE FOTOS</h3>
+                    
+                    <div id="conteiner_fotos">
+
+                        <div class="fotos">
+                            <img src="img/imagem1.jpg" alt="">
+                        </div>
+
+                        <div class="fotos">
+                            <img src="img/imagem2.jpg" alt="">
+                        </div>
+
+                        <div class="fotos">
+                            <img src="img/imagem3.jpg" alt="">
+                        </div>
+
+                        <div class="fotos">
+                            <img src="img/imagem4.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- // -->
+
+            </section>
+            <!-- // -->
+
+        </div>
+        <!-- // -->
+
+    </main>
+    <!-- // -->
+</body>
+</html>

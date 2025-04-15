@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+/*configs gerais e variaveis*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --fundo-header: #2C291E; 
+    --corNormal-h1-header: rgb(255, 255, 255);
+    --corEspecial-texto-header: #A56F26;
+    --corTítulo-iframes: #457c3a;
+    --corLink: #946324;
+    --fundoVisita: #CCC7B4;
+    --fundoBotao: #9C9174;
+    --fundoGaleria: #ECE6DE;
+}
+/* // */
+
+/*body*/
+body{
+    position: relative;
+    height: 100vh;
+}
+
+/* // */
+
+/*header*/
+
+header{
+    background-color: var(--fundo-header) ;
+
+    padding-top: 30px;
+
+    height: 250px;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+
+}
+
+h1{
+    color: var(--corNormal-h1-header);
+}
+
+#especial_h1{
+    color: var(--corEspecial-texto-header);
+}
+
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+}
+
+li{
+    color: var(--corEspecial-texto-header);
+
+    margin: 0px 20px;
+
+    cursor: pointer;
+}
+
+li:hover{
+    color: var(--corNormal-h1-header);
+}
+
+/* // */
+
+/* main */
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    
+
+    width: 70%;
+
+    padding: 10px;
+}
+
+aside{/* aside porta as imagens do topo do main*/
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+}
+
+#conteiner_ifrEinfos{
+    display: flex;
+}
+
+section{
+    display: flex;
+
+    width: 860px;
+}
+
+section h3{
+    color: var(--corTítulo-iframes);
+
+    padding-bottom: 10px;
+}
+
+section iframe{
+    margin-bottom: 20px;
+}
+
+section li{
+    color: black;
+}
+
+p{
+    text-align: justify;
+}
+
+.li_especial{
+    color: var(--corEspecial-texto-header);
+}
+
+a{
+    text-decoration: none;
+    color: var(--corLink);
+}
+
+.conteiner_iframe:not(:last-child){
+    margin-right: 140px;
+}
+
+/* fim da primeira section */
+
+#section2{
+    display: block;
+
+    margin-left: 30px;
+}
+
+#section2 h3{
+    color: var(--corLink);
+}
+
+
+/*parte da div de visita*/
+#visita{
+    background-color: var(--fundoVisita);
+
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=number]{
+    width: 40px;
+    margin-bottom: 30px;
+}
+
+input[type=button]{
+    width: 300px;
+    height: 50px;
+
+    background-color: var(--fundoBotao);
+
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+
+    border: none;
+}
+
+/* // */
+
+/*parte da div de galeria*/
+#galeria{
+    background-color: var(--fundoGaleria);
+    width: 425px;
+}
+
+#galeria h3{
+    color: var(--corLink);
+
+    padding: 20px;
+}
+
+#conteiner_fotos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fotos{
+    background-image: url(img/fundo-foto.png);
+    width: 126px;
+    height: 133px;
+
+    position: relative;
+
+    margin: 10px;
+}
+
+.fotos img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
