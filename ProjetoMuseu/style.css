@@ -48,7 +48,7 @@ h1{
     color: var(--corNormal-h1-header);
 }
 
-#especial_h1{
+.especial_text{
     color: var(--corEspecial-texto-header);
 }
 
@@ -215,4 +215,38 @@ input[type=button]{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+/* // * /
+
+/* footer */
+
+footer{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+.rodape{
+    width: 800px;
+
+    border-top: 1px solid var(--corEspecial-texto-header);
+
+    padding-top: 20px;
+}
+
+.rodape p{
+    text-align: center;
+
+    padding-top: 20px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
 }
