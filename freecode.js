@@ -65,7 +65,7 @@ for (const linha of linhas){
 console.log(resultado);
 */
 
-//praticando maior numero
+/*praticando maior numero
 let nums=[2,1,4,8,7];
 
 let maior=0;
@@ -84,5 +84,5 @@ for(i=0;i<=nums.length-1;i++){
 }
 
 console.log(`No fim, o maior entre ${nums} foi: ${maior}.`);
-
+*/
 
