@@ -99,14 +99,14 @@ let a = Math.random();
 console.log(a);
 */
 
-    //Funções nativas para manipular datas
+/*Funções nativas para manipular datas
 let data = new Date();
-//console.log(data.getDate() + "/" + (data.getMonth()+1) + "/" + (data.getFullYear()));
-/*console.log(data.toString());
+console.log(data.getDate() + "/" + (data.getMonth()+1) + "/" + (data.getFullYear()));
+console.log(data.toString());
 data.setMonth(data.getMonth()+1);
 data.setHours(data.getHours()+1);
 console.log(data.toString());
-*/
+
 
 let data1 = new Date(2025,2,25);
 let data2 = new Date(2025,2,18);
@@ -116,5 +116,7 @@ console.log(data2.getTime());
 console.log(Math.abs(data1.getTime()) - Math.abs(data2.getTime()));
 console.log(`Calculo de quantos milissegundos tem em um dia: ` + (1*24*60*60*1000));
 console.log(`Então faltam: ` + ((Math.abs(data1.getTime()) - Math.abs(data2.getTime()))/86400000) + ` dias`);
+*/
+
 
 
