@@ -1,0 +1,23 @@
+Crie um sistema em JavaScript que gerencie um ranking de jogadores baseado nas pontuações obtidas em partidas. O sistema deve ser capaz de:
+
+-Adicionar jogadores com nome e pontuação.
+    *objeto jogador com nome e pontuacao
+
+-Atualizar a pontuação de um jogador.
+    *Criar uma variavel que receba o nome do jogador afim de facilitar a troca de pontuacao
+
+Listar o ranking dos jogadores em ordem decrescente de pontuação.
+    *usar .sort e função arrow =>
+
+Exibir a média de pontuação de todos os jogadores.
+    usar loop for pra realziar a navegação entre os objetos array
+
+Exibir o nome do jogador com a maior pontuação.
+    usar loop for pra realziar a navegação entre os objetos array e uma variavel pra receber o maior pontuador e seu indice com seu nome
+
+📦 Requisitos:
+Use objetos para representar os jogadores.[check]
+
+Use arrays para armazenar os jogadores.[check]
+
+Use funções para organizar o código.[check]
