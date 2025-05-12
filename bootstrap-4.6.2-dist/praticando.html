@@ -8,12 +8,13 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css" >
 
-<title>Margin e padding</title>
+<title>Praticando Bootstrap</title>
 </head>
 <body class="m-0 p-0 bg-dark">
     <div class="w-100 m-0 p-0 bg-info">
+
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark border border-info">
-            <h1 class="navbar-brand">Primeira Página</h1>
+            <h1 class="navbar-brand">Notas</h1>
     
             <button class="navbar-toggler" data-toggle="collapse" data-target="#menuTarget">
                 <span class="navbar-toggler-icon"></span>
@@ -22,7 +23,7 @@
             <div class="collapse navbar-collapse" id="menuTarget">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item border rounded border-info bg-light mx-2">
-                        <a class="nav-link text-info" href="">Primeira Página</a>
+                        <a class="nav-link text-info" href="">Página de notas</a>
                     </li>
                     <li class="nav-item border rounded border-info bg-light mx-2">
                         <a class="nav-link text-info" href="">Segunda Página</a>
@@ -35,6 +36,40 @@
         </nav>
 
     </div>
+
+    <table class="table table-light table-striped mt-2">
+        <thead class="bg-info">
+            <tr>
+                <th>Nome</th>
+                <th>Nota</th>
+                <th>Média</th>
+                <th>Final</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Arthur</td>
+                <td>8</td>
+                <td>7</td>
+                <td>6</td>
+            </tr>
+
+            <tr>
+                <td>Jonas</td>
+                <td>9</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>Eliseu</td>
+                <td>7</td>
+                <td>7</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
