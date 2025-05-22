@@ -1,0 +1,31 @@
+@media  (max-width:575px) {
+    #musicaTodos h1{
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 576px) and (max-width:767px) { 
+    #musicaTodos h1{
+        font-size: 3em;
+    }
+}
+
+
+@media (min-width: 768px) { 
+
+}
+
+
+@media (min-width: 992px) { 
+
+}
+
+
+@media (min-width: 1200px) { 
+
+}
+
+
+@media (min-width: 1400px) { 
+
+}
