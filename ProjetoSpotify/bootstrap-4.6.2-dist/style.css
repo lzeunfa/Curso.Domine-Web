@@ -67,3 +67,91 @@ li a:hover{
     background-color: white;
     color: black;
 }
+
+.infos{
+    color: #7817ff;
+}
+
+.infos h1, .infos h2{
+    font-weight: 600;
+}
+
+.infos p{
+    color: black;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.recursos h1{
+    background-color: rgba(255, 255, 255, 0.425);
+    width: 140px;
+    color: white;
+    font-weight: 600;
+    padding: 2px;
+}
+
+.recursos h2{
+    color: #8DF0E0;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.recursos p{
+    font-weight: 600;
+    color: white;
+    font-size: 1.5em;
+}
+
+.img-inclinada{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 700px;
+}
+
+.img-inclinada img{
+    rotate: 20deg;
+}
+
+.img-acima{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+}
+
+.img-abaixo{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+footer{
+    background-color: #000000;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+footer h4{
+    color: #919496;
+    font-size:0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover{
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    float: right;
+    padding: 0px 10px;
+}
