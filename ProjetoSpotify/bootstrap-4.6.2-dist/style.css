@@ -104,9 +104,6 @@ li a:hover{
 
 .img-inclinada{
     position: relative;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 700px;
 }
 
 .img-inclinada img{
@@ -116,13 +113,13 @@ li a:hover{
 .img-acima{
     position: absolute;
     top: -10%;
-    left: 10%;
+    left: 20%;
 }
 
 .img-abaixo{
     position: absolute;
     top: 10%;
-    left: 40%;
+    left: 50%;
 }
 
 footer{
