@@ -42,7 +42,7 @@ li a:hover{
 }
 
 #btn-roxo{
-    background-color: #7c25f8;
+    background-color: #751df0;
     color: white;
     border-radius: 500px;
     transition: background 0.4s, color 0.4s;
@@ -51,7 +51,7 @@ li a:hover{
 }
 
 #btn-roxo:hover{
-    background-color: #7817ff;
+    background-color: #6009db;
 }
 
 #btn-branco{
