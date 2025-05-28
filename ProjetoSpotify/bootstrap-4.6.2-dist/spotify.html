@@ -52,17 +52,30 @@
 
     <section id="musicaTodos" class="d-flex">
 
-        <div class="container align-self-center">
+        <div id="carouselMsc" class="container align-self-center carousel slide" data-ride="carousel">
 
-            <div class="row">
+            <div class="row carousel-inner">
 
-                <div class="col-md-12" style="text-align: center;">
+                <div class="col-md-12 carousel-item active" style="text-align: center;">
                     <h1>Música para todos</h1>
                     <button id="btn-roxo" class="btn btn-lg ">APROVEITE O SPOTIFY FREE</button>
                     <button id="btn-branco" class="btn btn-lg btn-custom btn-branco">OBTER SPOTIFY PREMIUM</button>
                 </div>
+
+                <div class="col-md-12 carousel-item" style="text-align: center;">
+                    <h1>As melhores rádios</h1>
+                    <button id="btn-branco" class="btn btn-lg btn-custom btn-branco">OUÇA AGORA</button>
+                </div>
                 
             </div>
+
+            <a href="#carouselMsc" class="carousel-control-prev pr-5" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a href="#carouselMsc" class="carousel-control-next pl-5" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
             
         </div>
 
