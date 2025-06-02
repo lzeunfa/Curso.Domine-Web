@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS',Arial, sans-serif;
+}
+
+.divVideo{
+    height: 60vh;
+
+    position: relative;
+    align-items: center;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+}
+
+.divSec{
+    height: 100%;
+    background-image: linear-gradient(to top, #282a29e1 30%, transparent);
+    z-index: 1;
+}
