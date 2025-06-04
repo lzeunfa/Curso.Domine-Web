@@ -27,3 +27,17 @@ video{
     background-image: linear-gradient(to top, #282a29e1 30%, transparent);
     z-index: 1;
 }
+
+.servicosImg{
+    background-image: url(img/servicos.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 20px 2px 0px 2px;
+    height: 500px;
+    transition: .5s;
+}
+
+.servicosImg:hover{
+    box-shadow: 1px 2px 15px rgb(0, 0, 0);
+}
