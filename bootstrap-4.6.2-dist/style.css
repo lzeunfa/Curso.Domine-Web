@@ -159,3 +159,8 @@ video{
     border-bottom: 2px solid white;
 }
 
+#contNet{
+    height: 450px;
+    align-items: end;
+}
+
