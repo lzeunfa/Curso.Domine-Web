@@ -55,7 +55,3 @@ papagaio.voar();
 let avestruz = new Avestruz();
 avestruz.enterrarCabeca();
 avestruz.voar();
-
-
-
-
