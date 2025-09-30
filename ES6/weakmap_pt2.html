@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj1 = {
+    nome: 'Eliseu',
+    profissao: 'DevWeb'
+};
+
+let obj2 = {
+    nome: 'Heloisa',
+    profissao: 'CyberSecurity'
+};
+
+const objetos = new WeakMap();
+
+objetos.set(obj1,"Infos do obj 1");
+objetos.set(obj2,"Infos do obj 2");
+
+console.log(objetos);
+
+obj1 = null;
+
+console.log(objetos);
+    </script>
+</body>
+</html>
