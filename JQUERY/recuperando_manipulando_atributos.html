@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+
+        function teste(param){
+            if(param == 2){
+                $('div').attr('style','background-color: blue;width: 200px;height: 200px;' )
+            }
+        }
+
+        $(document).ready(() => {
+            teste(2);
+        });
+        
+
+    </script>
+</head>
+<body>
+
+    <img src="imgs/esfera_1.png" alt="esfera-1">
+
+    <div style="background-color: red;width: 100px;height: 100px;"></div>
+    
+</body>
+
+
+</html>

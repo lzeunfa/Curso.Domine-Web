@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <input type="text" name="" id="" placeholder="input 1">
+    <input type="text" name="" id="" placeholder="input 2">
+    <input type="text" name="" id="" placeholder="input 3">
+
+    <div>div 1</div>
+    <div>div 2</div>
+    <div>div 3</div>
+
+    <ul class="lista2">
+        <li>op 1</li>
+        <li class="exemplo2">op 2</li>
+        <li>op 3</li>
+    </ul>
+
+    <ul class="lista1">
+        <li class="exemplo2">op 1</li>
+        <li class="exemplo2">op 2</li>
+        <li class="exemplo2">op 3</li>
+    </ul>
+</body>
+
+
+    <script>
+        //combinacao de seletores
+
+        //selecionar elementos por classe de tag
+        // console.log($('li.exemplo1'));
+
+        //selecionar elementos por classe de classe especifica
+        //console.log($('.lista2 .exemplo2'));
+
+        //atuacao sobre o array de retorno dos elementos selecionados
+        console.log($('.lista1 .exemplo2:odd'));
+    </script>
+</html>
