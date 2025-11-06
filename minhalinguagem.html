@@ -18,7 +18,7 @@
     <h3>Programe na area a baixo:</h3>
     <form>
         <textarea name="codigo" id="codigo"></textarea> <br>
-        <button type="submit">compilar</button>
+        <button type="submit">interpretar</button>
     </form>
 
     <div id="resultado">
@@ -26,7 +26,7 @@
     </div>
 
     <script>
-        /*saida/teste 1/fim; saida/teste 2/fim;*/
+        /*st(teste 1)e; saida/teste 2/fim;*/
         
         $(document).ready(() => {
             $('form').submit((e) => {
@@ -36,23 +36,23 @@
                 let codigo = $('textarea').val();
 
                 function identificador(){
-                    let compilador = codigo.replace(/[\n\r]/g,'').split(/[/;]/);
-                    compilador.pop();
-                    console.log(compilador);
+                    let interpretador = codigo.replace(/[\n\r]/g,'').split(/[();]/);
+                    interpretador.pop();
+                    console.log(interpretador);
 
                     let i = 0;
                     while(i!=10){
 
-                        if(compilador[0] == 'saida'){
-                            $('#resultado').append(`<p> ${compilador[1]} </p><br>`);
-                            console.log(compilador);
+                        if(interpretador[0] == 'st'){
+                            $('#resultado').append(`<p> ${interpretador[1]} </p><br>`);
+                            console.log(interpretador);
 
                             for(let j = 0; j!=3;j++){
-                                compilador.shift();
-                                console.log(compilador);
+                                interpretador.shift();
+                                console.log(interpretador);
                             }
                             
-                            if(compilador.length == 0){
+                            if(interpretador.length == 0){
                                 i = 10;
                             }
 
