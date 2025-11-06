@@ -5,11 +5,25 @@
 		<title>jQuery</title>
 
 		<style>
-			
+			#divExterna{
+				background-color: #ccc;
+				width: 80px;
+				height: 80px;
+			}
+
+			.clicado{
+				border: 5px solid red;
+			}
+
+			.desClicado{
+				border: 1px solid black;
+			}
 		</style>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script>
+			let i = 0;
+
 			$(document).ready(() => {
 				$('#onload').html('Página carregada');
 
@@ -19,6 +33,84 @@
 
 				$(window).resize(() => {
 					$('#resize').html('Página redimensionada');
+				});
+
+				$('#btn1').mousedown(() => {
+					$('#div2').css('background-color', 'green');
+				});
+
+				$('#btn1').mouseup(() => {
+					$('#div2').css('background-color', 'red');
+				});
+
+				$('#btn1').click(() => {
+					$('#div2').css('background-color', 'blue');
+				});
+
+				$('#btn2').dblclick(() => {
+					$('#div2').css('background-color', 'purple');
+				});
+
+				$('#div2').mousemove((e) =>{
+					$('#resultado').html(e.offsetX + ' : ' + e.offsetY);
+				});
+
+				$('#divExterna').mouseenter(() => {
+					$('#resultadoExterna').html('ai entrou');
+				});
+
+				$('#divExterna').mouseout(() => {
+					i++;
+					if(i > 5){
+						$('#resultadoExterna').html('ai gozei');
+					}else{
+						$('#resultadoExterna').html('ai saiu');
+					}
+				});
+
+				$('#teclado').keydown((e) => {
+					$('#resultadoTecla').html('tecla pressionada');
+					console.log(e.keyCode);
+					
+				});
+
+				$('#teclado').keyup((e) => {
+					$('#resultadoTecla').html('tecla liberada');
+
+					let txt = $(e.target).val();
+
+					if(e.keyCode == 13){
+						$('#resultadoTecla').html(txt);
+						$(e.target).val('');
+					}
+				});
+
+				$('#nome').focus(() =>{
+					$('#nome').removeClass('desClicado');
+					$('#nome').addClass('clicado');
+				});
+
+				$('#nome').blur(() =>{
+					$('#nome').removeClass('clicado');
+					$('#nome').addClass('desClicado');
+				});
+
+				$('#opcao').change((e) => {
+					if($(e.target).val() === ''){
+						$('#opcao').css('background-color', 'white');
+					}else{
+						$('#opcao').css('background-color', 'red');
+					}
+				});
+
+				$('#form').submit((e) =>{
+					e.preventDefault();
+					console.log('enviado');
+					$('#form').before('<h1 id="enviado"> Formulario enviado</h1>');
+					setTimeout(() => {
+						$('#enviado').remove();
+					}, 3000)
+					
 				});
 			});
 		</script>
@@ -38,34 +130,37 @@
 			<hr />
 
 			<h3>Mouse</h3>
-			<button type="button">Clique aqui</button>
-			<button type="button">Clique aqui 2x</button>
-			<div style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px"></div>
-			<span>Resultado do evento sobre a div</span>
+			<button type="button" id="btn1">Clique aqui</button>
+			<button type="button" id="btn2">Clique aqui 2x</button>
+			<div id="div2" style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px"></div>
+			<span>Resultado do evento sobre a div</span><span id="resultado"></span>
+
+			<div id="divExterna"></div>
+			<span>Div externa: </span><span id="resultadoExterna"></span>
 			<hr />
 
 			<h3>Teclado</h3>
 			<span>Nome:</span>
-			<input type="text" />
-			<span>Resultado do evento sobre o input</span>
+			<input id="teclado" type="text" />
+			<span id="resultadoTecla">Resultado do evento sobre o input</span>
 			<hr />
 
 			<h3>Formulário</h3>
-			<form>
+			<form id="form">
 				<span>Nome:</span>
-				<input type="text" />
+				<input id="nome" type="text" />
 
 				<span>E-mail:</span>
-				<input type="text" />
+				<input id="email" type="text" />
 
 				<span>Motivo do contato:</span>
-				<select>
+				<select id="opcao">
 					<option value="">-- Selecione --</option>
 					<option value="duvida">Dúvida</option>
 					<option value="sugestao">Sugestão</option>
 				</select>
 				
-				<button type="button">Enviar</button>
+				<button type="submit">Enviar</button>
 			</form>
 		</div>
 	</body>

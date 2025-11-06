@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="/JQUERY/jquery-3.7.1.min.js"></script>
+
+    <style>
+        textarea{
+            width: 500px;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Programe na area a baixo:</h3>
+    <form>
+        <textarea name="codigo" id="codigo"></textarea> <br>
+        <button type="submit">compilar</button>
+    </form>
+
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        /*saida/teste 1/fim; saida/teste 2/fim;*/
+        
+        $(document).ready(() => {
+            $('form').submit((e) => {
+                e.preventDefault();
+                $('#resultado').html('');
+
+                let codigo = $('textarea').val();
+
+                function identificador(){
+                    let compilador = codigo.replace(/[\n\r]/g,'').split(/[/;]/);
+                    compilador.pop();
+                    console.log(compilador);
+
+                    let i = 0;
+                    while(i!=10){
+
+                        if(compilador[0] == 'saida'){
+                            $('#resultado').append(`<p> ${compilador[1]} </p><br>`);
+                            console.log(compilador);
+
+                            for(let j = 0; j!=3;j++){
+                                compilador.shift();
+                                console.log(compilador);
+                            }
+                            
+                            if(compilador.length == 0){
+                                i = 10;
+                            }
+
+                        }
+                    }
+                    
+                    return;
+                }
+                identificador();
+
+            });
+        });
+
+    </script>
+
+</body>
+</html>
