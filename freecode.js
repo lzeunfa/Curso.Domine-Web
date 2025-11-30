@@ -86,7 +86,7 @@ for(i=0;i<=nums.length-1;i++){
 console.log(`No fim, o maior entre ${nums} foi: ${maior}.`);
 */
 
-function SomaPares(numeros){
+/*function SomaPares(numeros){
     let somar = 0;
 
     for(let i = 0; i<=numeros.length-1;i++){
@@ -98,4 +98,4 @@ function SomaPares(numeros){
     return somar;
 }
 console.log(SomaPares([2,1,1,4,8,3]));
-
+*/
